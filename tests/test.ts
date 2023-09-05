@@ -3,7 +3,7 @@ import { app, HTTP_STATUSES } from "../src/index";
 
 describe("/course", () => {
   beforeAll(async () => {
-    await request(app).delete("/__test__/data");
+    await request(app).delete("/test/data");
   });
 
   it("should return 200 and empty array", async () => {

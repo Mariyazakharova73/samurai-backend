@@ -24,7 +24,7 @@ let db = {
         { id: 4, title: "testfront" },
     ],
 };
-exports.app.delete("/__test__/data", (req, res) => {
+exports.app.delete("/test/data", (req, res) => {
     db.courses = [];
     res.sendStatus(exports.HTTP_STATUSES.NO_CONTENT_204);
 });

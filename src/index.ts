@@ -34,7 +34,7 @@ let db: { courses: Course[] } = {
   ],
 };
 
-app.delete("/__test__/data", (req, res) => {
+app.delete("/test/data", (req, res) => {
   db.courses = [];
   res.sendStatus(HTTP_STATUSES.NO_CONTENT_204);
 });
