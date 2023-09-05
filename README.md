@@ -30,4 +30,8 @@ test express
     yarn dev
     yarn watch
 
+Запустить тесты:
+
+    yarn test
+
 </details>
