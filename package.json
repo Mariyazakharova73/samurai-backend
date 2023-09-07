@@ -8,7 +8,7 @@
   "scripts": {
     "watch": "tsc -w",
     "dev": "nodemon --inspect dist/index.js",
-    "test": "jest --watchAll --no-cache --detectOpenHandles"
+    "test": "jest --no-cache --detectOpenHandles"
   },
   "dependencies": {
     "@types/jest": "^29.5.4",
