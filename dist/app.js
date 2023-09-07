@@ -11,5 +11,5 @@ const tests_1 = require("./routes/tests");
 exports.app = (0, express_1.default)();
 const jsonBodyMiddleware = express_1.default.json();
 exports.app.use(jsonBodyMiddleware);
-(0, courses_1.addCoursesRoutes)(exports.app, db_1.db);
-(0, tests_1.addTestsRoutes)(exports.app, db_1.db);
+exports.app.use("/courses", (0, courses_1.getCoursesRouter)(db_1.db));
+exports.app.use("/test", (0, tests_1.getTestsRouter)(db_1.db));
